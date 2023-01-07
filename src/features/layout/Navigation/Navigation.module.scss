@@ -10,7 +10,7 @@
 }
 
 .item {
-  margin-left: var(--size-m);
+  margin-left: var(--size-xxs);
 }
 
 .link {
@@ -19,7 +19,7 @@
   position: relative;
   height: var(--size-panel);
   color: var(--color-secondary);
-  font-size: var(--font-base);
+  font-size: var(--font-small);
   font-weight: var(--font-semibold);
   text-decoration: none;
 

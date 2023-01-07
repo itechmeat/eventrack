@@ -9,6 +9,19 @@ export enum DataType {
   ARRAY = "array",
 }
 
+export const getTheme = (): { [key: string]: string } => {
+  return custom?.theme;
+};
+
+export const setTheme = () => {
+  const theme = getTheme();
+  const root = document.documentElement;
+  if (!theme || !root) return;
+  Object.keys(theme).forEach((key) => {
+    root.style.setProperty(`--color-${key}`, theme[key]);
+  });
+};
+
 export const getData = (request: string, type?: DataType): any => {
   // @ts-ignore
   const dataResult = request.split(".").reduce((o, i) => o[i], data);
@@ -37,7 +50,7 @@ export const getDays = (dayId?: string | null): DayWithActive[] => {
   if (!days.length) return [];
   return days.map((day) => ({
     ...day,
-    active: day.id === dayId,
+    active: day.slug === dayId,
   }));
 };
 

@@ -16,7 +16,7 @@ export type Description = string;
 export type Version = string;
 
 export type Day = {
-  id: string;
+  slug: string;
   name: string;
   date: string;
 };
@@ -26,7 +26,7 @@ export type DayWithActive = Day & {
 };
 
 export type Room = {
-  id: string;
+  slug: string;
   name: string;
   color?: string;
 };
@@ -42,6 +42,7 @@ export type Event = {
   description?: string;
   type: EventType;
   day: string;
+  roomSlug?: string;
   timeStart: string;
   timeEnd: string;
   mode?: OnlineMode;

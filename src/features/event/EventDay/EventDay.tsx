@@ -10,7 +10,7 @@ type EventDayProps = {
 };
 
 export const EventDay: FC<EventDayProps> = ({ day }) => {
-  const events = getEventsByDayId(day.id);
+  const events = getEventsByDayId(day.slug);
 
   return (
     <article className={styles.day}>

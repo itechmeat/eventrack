@@ -14,9 +14,9 @@ export const Navigation: FC<NavigationProps> = () => {
       {days && days.length > 0 && (
         <ul className={styles.menu}>
           {days.map((day) => (
-            <li className={styles.item} key={day.id}>
+            <li className={styles.item} key={day.slug}>
               <NavLink
-                to={`/?day=${day.id}`}
+                to={`/?day=${day.slug}`}
                 className={cn(styles.link, {
                   [styles.active]: day.active && dayId,
                 })}

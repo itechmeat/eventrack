@@ -13,12 +13,17 @@
   font-size: var(--font-base);
 }
 
-.logo {
+.brand {
+  display: flex;
   color: var(--color-brand);
   font-family: var(--font-family-title);
   font-size: var(--font-title);
   font-weight: var(--font-semibold);
   text-decoration: none;
+}
+
+.logo {
+  height: 18px;
 }
 
 .user {

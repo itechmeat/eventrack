@@ -16,6 +16,9 @@
 }
 
 .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: relative;
   z-index: 2;
   padding: var(--size-xxs) var(--size-m);
@@ -23,4 +26,8 @@
   background: var(--color-common);
   color: var(--color-hint);
   font-size: var(--font-small);
+}
+
+.github {
+  color: inherit;
 }
