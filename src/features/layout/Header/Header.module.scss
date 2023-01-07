@@ -1,0 +1,30 @@
+.header {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  height: var(--size-panel);
+  background: var(--color-common);
+  padding: 0 var(--size-m);
+  font-size: var(--font-base);
+}
+
+.logo {
+  color: var(--color-brand);
+  font-family: var(--font-family-title);
+  font-size: var(--font-title);
+  font-weight: var(--font-semibold);
+  text-decoration: none;
+}
+
+.user {
+  margin-left: auto;
+}
+
+.userName {
+  margin-inline-end: var(--size-l);
+}

@@ -1,0 +1,98 @@
+{
+  "logo": "Eventrack",
+  "logoImage": "eventrack.svg",
+  "name": "Eventrack",
+  "description": "Eventrack",
+  "version": "1.0.0",
+  "days": [
+    {
+      "id": "day1",
+      "name": "Day 1",
+      "date": "2023-01-08"
+    },
+    {
+      "id": "day2",
+      "name": "Day 2",
+      "date": "2023-01-09"
+    },
+    {
+      "id": "day3",
+      "name": "Day 3",
+      "date": "2023-01-10"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "room1",
+      "name": "Lecture hall",
+      "color": "#750820"
+    },
+    {
+      "id": "room2",
+      "name": "Breakout rooms",
+      "color": "#590875"
+    }
+  ],
+  "types": [
+    {
+      "id": "lecture",
+      "color": "#dadada"
+    },
+    {
+      "id": "break",
+      "color": "#15ac33"
+    },
+    {
+      "id": "action",
+      "color": "#d82125"
+    }
+  ],
+  "events": [
+    {
+      "slug": "registration",
+      "title": "Registration, Arrival",
+      "type": "lecture",
+      "day": "day1",
+      "timeStart": "14:00",
+      "timeEnd": "19:00",
+      "mode": "offline"
+    },
+    {
+      "slug": "pick-up",
+      "title": "Merch Pick up",
+      "type": "lecture",
+      "day": "day1",
+      "timeStart": "17:00",
+      "timeEnd": "19:00",
+      "mode": "offline"
+    },
+    {
+      "slug": "rehearsal",
+      "title": "Leadership session rehearsal",
+      "type": "lecture",
+      "day": "day1",
+      "timeStart": "19:00",
+      "timeEnd": "20:00",
+      "mode": "offline"
+    },
+    {
+      "slug": "morning-coffee-day1",
+      "title": "Coffee",
+      "type": "break",
+      "day": "day2",
+      "timeStart": "08:45",
+      "timeEnd": "09:00",
+      "mode": "offline"
+    },
+    {
+      "slug": "introduction",
+      "title": "Introduction and welcome",
+      "description": "Information about the week, goals",
+      "type": "lecture",
+      "day": "day2",
+      "timeStart": "09:00",
+      "timeEnd": "09:30",
+      "mode": "online"
+    }
+  ]
+}
